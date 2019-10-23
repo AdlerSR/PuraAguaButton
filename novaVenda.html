@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/novaVenda.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="icon" href="img/logo.png">
+  <title>Nova Venda</title>
+</head>
+
+<body onload="buscarUrl()">
+  <div class="content">
+    <div id="bloco-azul">
+      <div class="bloco-img">
+        <a href="index.html">
+          <img src="img/logoPuraAgua.png" alt="Logo Pura Água">
+        </a>
+        <h1>Nova Venda</h1>
+      </div>
+    </div>
+
+    <div id="bloco-branco">
+      <div class="form">
+        <legend>Dados da Venda</legend>
+
+        <div class="columns-2">
+          <div class="item">
+            <p>Data de Hoje</p>
+            <input type="date" name="dataHoje" id="dataVenda"/>
+          </div>
+
+          <div class="item">
+            <p>Data do Galão</p>
+            <input type="text" name="dataGalao" placeholder="Ex: 09/2019" id="dataGalao"/>
+          </div>
+        </div>
+
+        <div class="columns-2">
+          <div class="item">
+            <p>Quantidade</p>
+            <input type="number" name="quantidade" placeholder="Ex: 3" id="quantidade"/>
+          </div>
+
+          <div class="item">
+            <p>Valor Total</p>
+            <input type="float" name="valorTotal" placeholder="Ex: 100.00" id="valorTotal"/>
+          </div>
+        </div>
+
+        <span id="mensagem"></span>
+
+        <div class="btn">
+          <button onclick="addVenda()" id="button">adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <script src="./js/inicializeFirebase.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="js/sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <script src="https://kit.fontawesome.com/1c265f2a26.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Administrador</title>
+</head>
+
+<body onload="conferirAdmin()">
+  <div class="allContent">
+    <div class="sidebar">
+      <div class="headerLogo">
+        <img src="img/logo.png" class="logo">
+      </div>
+      <a href="index.html">
+        <div class="buttonDefault">
+          <h2>Home</h2>
+        </div>
+      </a>
+      <a onclick="logout()">
+        <div class="buttonDisabled">
+          <h2>Sair do administrador</h2>
+        </div>
+      </a>
+    </div>
+    <div class="closedSidebar" id="wrapper">
+      <div class="navbar">
+        <ul>
+          <li class="navIcon"><span class="barsMenu " id="sidebarButton"><i class="fas fa-bars"></i></span></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="cards">
+          <div class="card-admin">
+            <h2>Total do dia</h2>
+            <div class="card-total">
+              <p id="totalDia">0</p>
+            </div>
+          </div>
+          <div class="card-admin">
+            <h2>Total da semana</h2>
+            <div class="card-total">
+              <p id="totalSemana">0</p>
+            </div>
+          </div>
+          <div class="card-admin">
+            <h2>Total do mês</h2>
+            <div class="card-total">
+              <p id="totalMes">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="./js/inicializeFirebase.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="js/sidebar.js"></script>
+</body>
+
+</html>

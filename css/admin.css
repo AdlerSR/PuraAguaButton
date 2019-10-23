@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-admin{
+  width: 20%;
+  min-width: 500px;
+  min-height: 30vh;
+  margin: 0vh 3vw 3vh 3vw;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.card-admin h2{
+  font-size: 30px;
+}
+
+.card-total{
+  display: flex;
+  align-items: center;
+  height: 23vh;
+  justify-content: center;
+}
+
+.card-total p{
+  font-size: 80px;
+}

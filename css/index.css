@@ -1,0 +1,12 @@
+tbody tr{
+  cursor: pointer;
+}
+
+tr:nth-child(even):hover {
+  background-color: rgb(175, 230, 253);
+  
+}
+
+tr:nth-child(2n+1):hover {
+  background-color: rgb(179, 231, 253);
+}
